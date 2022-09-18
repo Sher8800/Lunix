@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="main">
+      <h1 class="h1">First level: Коротко дайте ответы на след. вопросы:</h1>
+      <ol class="num">
+        <div class="question">
+          <li class="li li-1">Зачем предназначен файл .gitignore?</li>
+          <p class="p p-1">
+            .gitignore нужен для скрытия файлов и папок от системы контроля
+            версий Git. Например файлы с поролями, системные файлы и тд.
+          </p>
+        </div>
+
+        <div class="question">
+          <li class="li li-2">Что делает команда git remote rm origin?</li>
+          <p class="p p-2">Удоляет связь с удоленным репозиторием.</p>
+        </div>
+
+        <div class="question">
+          <li class="li li-3">В каких случаях происходит MERGE CONFLICT?</li>
+          <p class="p p-3">MERGE CONFLICT происходит обычно тогда когда два разроботчика 
+            вносят какие-либо изменения в файл в одном и том же месте.
+          </p>
+        </div>
+
+        <div class="question">
+          <li class="li li-4">Как посмотреть отличия между ветками?</li>
+          <p class="p p-4">git diff ветка1 ветка2</p>
+        </div>
+
+        <div class="question">
+          <li class="li li-5">
+            Какой командой удалить локальную и удаленную ветки?
+          </li>
+          <p class="p p-5">Чтобы удалить локальную ветку мы используем команду git branch -d 
+            (или -D для принудительного удоления). <br>Для удоления удоленной ветки вводим 
+            следующую  команду: git push origin -d "name-branch" </p>
+        </div>
+
+        <div class="question">
+          <li class="li li-6">Как сделать файл неотслеживаемым (untracked)?</li>
+          <p class="p p-6">Чтобы сделать файл неотслеживаемым нужна команда: git reset "namefile"</p>
+        </div>
+      </ol>
+    </div>
+  </body>
+</html>
